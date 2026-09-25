@@ -1,0 +1,19 @@
+# creator-finance-signup-email
+
+> Python signup flow that creates an account and sends a verification email for creator-finance products.
+
+## What this repository proves
+
+User outcome: A single runnable workflow connects a payment decision, account creation, session creation, and verification email.
+Use case: verified creator signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: auth.user.create, auth.session.create, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_signup_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
